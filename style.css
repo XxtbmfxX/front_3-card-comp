@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+
+:root{
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+  
+      
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --Very-light-gray : hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 62.5%;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+
+body{
+    background-color: var(--Very-light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-block: 20px;
+}
+
+p{
+    font-size: 2.5rem;
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+
+h1{
+    font-size: 4rem;
+    color: var(--Transparent-white);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+
+button{
+    border: 3px solid var(--Very-light-gray);
+    border-radius: 100px;
+    background-color: var(--Very-light-gray);
+    width: 70%;
+    max-width: 250px;
+    padding: 20px;
+    font-size: 2rem;
+    color: var(--Bright-orange);
+}
+
+button:hover{
+    color: var(--Very-light-gray);
+    background-color: transparent;
+}
+
+
+.Main_item{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 70vw;
+    max-width: 500px;
+    padding: 40px;
+}
+
+.Main_item img{
+ width: 100px;
+ height: auto;
+}
+
+.Main_item:nth-child(1){
+    background-color: var(--Bright-orange);
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+
+}
+
+
+
+.Main_item:nth-child(2){
+    background-color: var(--Dark-cyan);
+}
+
+
+
+.Main_item:nth-child(2) button{
+    color: var(--Dark-cyan);
+}
+
+
+.Main_item:nth-child(2) button:hover{
+    color: var(--Very-light-gray);
+    background-color: transparent;
+}
+
+
+.Main_item:nth-child(3){
+    background-color: var(--Very-dark-cyan);
+    border-end-end-radius: 5px;
+    border-end-start-radius: 5px;
+
+}
+
+
+.Main_item:nth-child(3) button{
+    color: var(--Very-dark-cyan);
+}
+
+.Main_item:nth-child(3) button:hover{
+    color: var(--Very-light-gray);
+    background-color: transparent;
+}
+
+
+
+
+.Main_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.attribution { font-size: 2rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
